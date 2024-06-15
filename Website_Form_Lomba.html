@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Lomba Lari Marathon</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pendaftaran Lomba Lari Marathon</h1>
+            <p>Bergabunglah dengan kami dalam acara lomba lari marathon.</p>
+        </header>
+
+        <section class="registration">
+            <h2>Formulir Pendaftaran</h2>
+            <form id="registration-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Telepon:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required>
+                
+                <label for="age">Umur:</label>
+                <input type="number" id="age" name="age" min="15" max="70" required>
+                
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="gender" required>
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                </select>
+                
+                <button type="submit">Daftar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="main-2.js"></script>
+</body>
+</html>
